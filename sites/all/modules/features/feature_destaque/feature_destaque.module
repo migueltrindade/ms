@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_destaque feature.
+ */
+
+include_once('feature_destaque.features.inc');

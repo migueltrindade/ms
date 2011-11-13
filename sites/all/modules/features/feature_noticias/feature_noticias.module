@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_noticias feature.
+ */
+
+include_once('feature_noticias.features.inc');

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_master feature.
+ */
+
+include_once('feature_master.features.inc');

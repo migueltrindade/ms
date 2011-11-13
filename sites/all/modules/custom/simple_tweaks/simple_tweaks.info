@@ -1,0 +1,3 @@
+name = "Simple Tweaks"
+description = "Simple Tweaks provide some adjustments and minor fixes."
+core = "7.x"

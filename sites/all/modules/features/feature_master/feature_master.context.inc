@@ -88,6 +88,12 @@ function feature_master_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
+        'system-user-menu' => array(
+          'module' => 'system',
+          'delta' => 'user-menu',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
         'simple_tweaks-copyright' => array(
           'module' => 'simple_tweaks',
           'delta' => 'copyright',

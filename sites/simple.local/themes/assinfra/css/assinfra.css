@@ -176,13 +176,12 @@ p {
  * Blocos da home
  */
  .wrapper-columns-front .box-home {
-   width: 280px;
-   padding: 0 10px;
+   width: 290px;
    float: left;
    position: relative;
  }
  .wrapper-columns-front .front-box {
-   padding: 0 330px;
+   padding: 0 335px;
  }
  .wrapper-columns-front .box-center {
    width:100%; 
@@ -193,7 +192,8 @@ p {
    right:310px;
  }
  .wrapper-columns-front .box-right { 
-   margin-right:-300px; 
+   float: right;
+   margin-right:-310px; 
  }
 
  
@@ -239,7 +239,7 @@ p {
    background: #D6E1E9;
  }
  .footer-page p {
-   margin-bottom: 0px;
+   margin-bottom: 0;
  }
 
 

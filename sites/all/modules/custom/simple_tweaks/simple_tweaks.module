@@ -67,7 +67,6 @@ function _simple_tweaks_blocos_admin(&$form_state) {
       $form[$fieldset_name]['title_' . $index] = array(
         '#type' => 'textfield',
         '#title' => 'Título',
-        '#required' => true,
         '#default_value' => $bloco['title']
       );
     }
@@ -75,9 +74,8 @@ function _simple_tweaks_blocos_admin(&$form_state) {
     $form[$fieldset_name]['body_' . $index] = array(
       '#type' => 'text_format',
       '#title' => 'Corpo',
-      '#required' => true,
       '#default_value' => $bloco['body'],
-      '#format' => 'simple', // nome do formato de texto  
+      '#format' => 'simple',
     );
    
   }
@@ -91,14 +89,13 @@ function _simple_tweaks_blocos_admin(&$form_state) {
 }
 
 function _simple_tweaks_blocos_admin_submit($form, &$form_state) {
-  
   $blocos = _simple_tweaks_retorna_array_blocos();
   
   foreach($blocos as $index => $bloco) {
     if($bloco['use_title']) {
       variable_set('title_' . $index, $form_state['values']['title_' . $index]);
     }
-    variable_set('body_' . $index, $form_state['values']['body_' . $index]);
+    variable_set('body_' . $index, $form_state['values']['body_' . $index]['value']);
   }
   drupal_set_message('Os blocos foram salvos com sucesso.');
 }

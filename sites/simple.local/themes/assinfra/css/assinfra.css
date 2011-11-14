@@ -238,6 +238,9 @@ p {
    font-size: 12px;
    background: #D6E1E9;
  }
+ .footer-page p {
+   margin-bottom: 0px;
+ }
 
 
 

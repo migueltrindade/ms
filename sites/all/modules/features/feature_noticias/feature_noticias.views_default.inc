@@ -236,7 +236,7 @@ function feature_noticias_views_default_views() {
   $handler->display->display_options['path'] = 'admin/website/noticias';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Notícias';
-  $handler->display->display_options['menu']['description'] = 'Notícias';
+  $handler->display->display_options['menu']['description'] = 'Administração das notícias';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'management';
   $translatables['noticias'] = array(

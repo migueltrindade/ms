@@ -18,7 +18,7 @@ function feature_links_menu_default_menu_links() {
     'link_title' => 'Links',
     'options' => array(
       'attributes' => array(
-        'title' => 'Links',
+        'title' => 'Administração dos links',
       ),
     ),
     'module' => 'system',

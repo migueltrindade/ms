@@ -32,7 +32,7 @@ function feature_noticias_menu_default_menu_links() {
     'link_title' => 'Notícias',
     'options' => array(
       'attributes' => array(
-        'title' => 'Notícias',
+        'title' => 'Administração das notícias',
       ),
     ),
     'module' => 'system',

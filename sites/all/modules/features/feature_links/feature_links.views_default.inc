@@ -301,7 +301,7 @@ function feature_links_views_default_views() {
   $handler->display->display_options['path'] = 'admin/website/links';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Links';
-  $handler->display->display_options['menu']['description'] = 'Links';
+  $handler->display->display_options['menu']['description'] = 'Administração dos links';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'management';
   $translatables['links'] = array(

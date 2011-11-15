@@ -354,7 +354,7 @@ function feature_destaque_views_default_views() {
   $handler->display->display_options['path'] = 'admin/website/destaque';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Destaque';
-  $handler->display->display_options['menu']['description'] = 'Destaque';
+  $handler->display->display_options['menu']['description'] = 'Administração dos destaques';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'management';
   $translatables['destaque'] = array(

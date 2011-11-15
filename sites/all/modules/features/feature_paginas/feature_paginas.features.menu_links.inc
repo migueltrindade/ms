@@ -18,7 +18,7 @@ function feature_paginas_menu_default_menu_links() {
     'link_title' => 'Páginas',
     'options' => array(
       'attributes' => array(
-        'title' => 'Páginas',
+        'title' => 'Administração das páginas',
       ),
     ),
     'module' => 'system',

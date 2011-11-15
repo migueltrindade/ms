@@ -328,7 +328,7 @@ function feature_convenios_views_default_views() {
   $handler->display->display_options['path'] = 'admin/website/convenios';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Convênios';
-  $handler->display->display_options['menu']['description'] = 'Convênios';
+  $handler->display->display_options['menu']['description'] = 'Administração dos convênios';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'management';
   $translatables['convenios'] = array(

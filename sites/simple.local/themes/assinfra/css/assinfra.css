@@ -226,7 +226,47 @@ p {
     background:none;
   }
 
+
+/**
+ * Fotos
+ */
  
+  #view-fotos-view-display-id-page .views-row {
+    clear: both;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  #view-fotos-view-display-id-page .views-row:after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+  #view-fotos-view-display-id-page .views-field-field-fotos-fotos {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  #view-fotos-view-display-id-page .views-field-title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+  }
+  #view-fotos-view-display-id-page .views-field-view-node {
+    margin: 10px 0 0 0;
+  }
+  .node-fotos .field-name-field-fotos-descricao {
+    padding: 0 0 10px;
+    border-bottom: 1px solid #f6f6f6;
+    margin: 0 0 30px 0;
+  }
+  .node-fotos .field-name-field-fotos-fotos:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .node-fotos .field-name-field-fotos-fotos .field-item {
+    float: left;
+    margin: 0 18px 18px 0;
+  }
  
 /**
  * Footer

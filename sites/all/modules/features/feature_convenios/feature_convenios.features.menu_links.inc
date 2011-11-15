@@ -26,7 +26,7 @@ function feature_convenios_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
+    'weight' => '-45',
   );
   // Exported menu link: management:admin/website/convenios
   $menu_links['management:admin/website/convenios'] = array(
@@ -36,7 +36,7 @@ function feature_convenios_menu_default_menu_links() {
     'link_title' => 'Convênios',
     'options' => array(
       'attributes' => array(
-        'title' => 'Convênios',
+        'title' => 'Administração dos convênios',
       ),
     ),
     'module' => 'system',

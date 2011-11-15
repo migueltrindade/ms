@@ -18,7 +18,7 @@ function feature_destaque_menu_default_menu_links() {
     'link_title' => 'Destaque',
     'options' => array(
       'attributes' => array(
-        'title' => 'Destaque',
+        'title' => 'Administração dos destaques',
       ),
     ),
     'module' => 'system',

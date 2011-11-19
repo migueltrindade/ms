@@ -17,7 +17,7 @@ function feature_noticias_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'noticias';
   $view->core = 7;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
@@ -61,11 +61,11 @@ function feature_noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Conteúdo: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
-  $handler->display->display_options['fields']['delete_node']['table'] = 'node';
+  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
   /* Campo: Conteúdo: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   /* Sort criterion: Conteúdo: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -110,7 +110,6 @@ function feature_noticias_views_default_views() {
   $handler = $view->new_display('block', 'bc_outras_not', 'block_2');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'Outras notícias';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -181,7 +180,7 @@ function feature_noticias_views_default_views() {
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   /* Campo: Conteúdo: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
-  $handler->display->display_options['fields']['delete_node']['table'] = 'node';
+  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['label'] = 'apagar';
   $handler->display->display_options['fields']['delete_node']['alter']['alter_text'] = 0;
@@ -204,7 +203,7 @@ function feature_noticias_views_default_views() {
   $handler->display->display_options['fields']['delete_node']['text'] = 'apagar';
   /* Campo: Conteúdo: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = 'editar';
   $handler->display->display_options['fields']['edit_node']['alter']['alter_text'] = 0;

@@ -1,0 +1,19 @@
+body {
+  min-width: 1000px;
+}
+
+#main-content{ width:96%; position:relative; float:left; margin: 0 2%; }
+.fubik-no-sidebars #main-content { float:none; width:auto; margin: 0 30px; }
+
+.fubik-sidebar-first #page,
+.fubik-two-sidebars #page { padding-left:230px; } /* width of sidebar + margin */
+.fubik-sidebar-second #page,
+.fubik-two-sidebars #page { padding-right:230px; } /* width of sidebar + margin */
+ 
+.sidebar { width:200px; float:left; position:relative; }
+.first_sidebar { margin-left:-100%; right:200px; }
+.second_sidebar { margin-right:-200px; }
+
+#footer {
+  margin: 10px 0 20px;
+}

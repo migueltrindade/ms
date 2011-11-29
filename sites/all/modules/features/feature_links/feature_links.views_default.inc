@@ -133,6 +133,7 @@ function feature_links_views_default_views() {
   $handler->display->display_options['fields']['field_links_website']['table'] = 'field_data_field_links_website';
   $handler->display->display_options['fields']['field_links_website']['field'] = 'field_links_website';
   $handler->display->display_options['fields']['field_links_website']['label'] = '';
+  $handler->display->display_options['fields']['field_links_website']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_links_website']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_links_website']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_links_website']['alter']['absolute'] = 0;
@@ -145,13 +146,37 @@ function feature_links_views_default_views() {
   $handler->display->display_options['fields']['field_links_website']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['field_links_website']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_links_website']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_links_website']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_links_website']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_links_website']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_links_website']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_links_website']['empty_zero'] = 0;
   $handler->display->display_options['fields']['field_links_website']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['field_links_website']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_links_website']['field_api_classes'] = 0;
+  /* Campo: Conteúdo: Título */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_links_website]';
+  $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['title']['link_to_node'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Conteúdo: Tipo */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -318,7 +343,7 @@ function feature_links_views_default_views() {
     t('editar'),
     t('Delete link'),
     t('bc_site'),
-    t('Outras notícias'),
+    t('[field_links_website]'),
     t('pg_admin'),
     t('<div class="form-item form-type-textfield form-item-name"><a href="/node/add/links" title="Cadastrar novo item">Cadastrar novo item</a></div>'),
     t('apagar'),

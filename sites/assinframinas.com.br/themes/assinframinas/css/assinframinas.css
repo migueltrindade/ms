@@ -1,0 +1,316 @@
+/**
+ * Global configuration
+ */
+::selection {
+  background:#FF5E99; color:#fff; text-shadow:none;
+}
+::-moz-selection {
+  background:#FF5E99; color:#fff; text-shadow:none;
+}
+
+body {
+  padding: 20px 0 40px;
+  min-width:960px;
+  background-color:#7892A5;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-family:Arial;
+  font-size: 80%;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.5;
+  font-family: 'Actor', sans-serif;
+}
+
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+
+.page-title {
+  margin: 0 0 .2em 0;
+}
+
+a,
+a.active,
+a:visited,
+a:hover  { 
+  text-decoration: none; 
+  color: #587488;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+
+/**
+ * Structure
+ */
+.container { margin:0 auto; width:960px; } /* fixed or liquid */
+
+.wrapper-columns {  padding-bottom: 20px; }
+.sidebar-first .wrapper-columns,
+.two-sidebars .wrapper-columns { padding-left:240px; }
+.sidebar-second .wrapper-columns,
+.two-sidebars .wrapper-columns { padding-right:240px; }
+
+.sidebar-second .wrapper-columns {
+  background:url(../images/bg-sidebars.gif) 0 0 repeat-y;
+}
+
+.sidebar { width:200px; float:left; position:relative; padding: 0 20px; }
+.first_sidebar { margin-left:-100%; right:240px; }
+.second_sidebar { margin-right:-240px; }
+
+.main > .content { padding: 0 20px; }
+
+.container {
+  background-color: #FFF;
+}
+
+.header-page {
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo {
+  padding: 0 0 0 30px;
+}
+.site-slogan {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  color: #7892A5;
+}
+
+#block-search-form {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sidebar .block header {
+  margin-bottom:5px;
+}
+ 
+
+/**
+ * Busca
+ */
+ 
+  #block-search-form #edit-submit {
+    width:70px;
+    height: 22px;
+    line-height: 18px;
+  }
+ 
+/**
+ * Menu Principal
+ */
+
+.wrapper-menu .primary-navigation {
+  height:45px;
+  background-color: #D6E1E9;
+  margin: 0 0 20px;
+}
+.wrapper-menu .primary-navigation ul,
+.wrapper-menu .primary-navigation li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.wrapper-menu .primary-navigation li {
+  float:left;
+}
+.wrapper-menu .primary-navigation li.last{
+  background:none;
+}
+.wrapper-menu .primary-navigation li a {
+  padding:0 20px;
+  display:block;
+  height:45px;
+  line-height:45px;
+  text-decoration:none;
+  font-size:13px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  letter-spacing:1px;
+  color:#434343;
+  text-transform:uppercase;
+}
+
+.wrapper-menu .primary-navigation li a:hover,
+.wrapper-menu .primary-navigation li a.active {
+  color:#FFF;
+  text-shadow:1px 1px 0px #000;
+  background-color:#B3CBDC;
+}
+
+
+/**
+ * Destaque Home
+ */
+ #block-views-destaque-block{
+   margin: 10px 0 20px;
+ }
+ #block-views-destaque-block .views-slideshow-controls-bottom {
+  background: #D6E1E9;
+  padding: 10px;
+  margin: 10px 0 0 0;
+}
+#block-views-destaque-block .views-slideshow-pager-fields {
+  float: right;
+}
+#block-views-destaque-block .views-slideshow-pager-field-item {
+  float: left;
+  border: 5px solid #fff;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+
+/**
+ * Blocos da home
+ */
+ .wrapper-columns-front .box-home {
+   width: 290px;
+   float: left;
+   position: relative;
+ }
+ .wrapper-columns-front .front-box {
+   padding: 0 335px;
+ }
+ .wrapper-columns-front .box-center {
+   width:100%; 
+   padding: 0; 
+ }
+ .wrapper-columns-front .box-left {
+   margin-left:-100%; 
+   right:310px;
+ }
+ .wrapper-columns-front .box-right { 
+   float: right;
+   margin-right:-310px; 
+ }
+
+ 
+ 
+ /**
+  * Noticias
+  */
+  
+  #view-noticias-view-display-id-page .views-row {
+    border-bottom: 1px solid #e2e2e2;
+    margin: 0 0 20px 0;
+  }
+  
+  #view-noticias-view-display-id-page .links {
+    float: right;
+  }
+  .node-noticias h2 {
+    margin: 0 0 10px;
+  }
+  /* bloco lateral */
+  #block-views-noticias-block-2 li {
+    margin-bottom: 5px;
+  }
+  
+/**
+ * Convenios
+ */
+ 
+  #view-convenios-view-display-id-page td {
+    background:none;
+  }
+
+ 
+/**
+ * Fotos
+ */
+ 
+  #view-fotos-view-display-id-page .views-row {
+    clear: both;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  #view-fotos-view-display-id-page .views-row:after {
+    content:"";
+    clear: both;
+    display: table;
+  }
+  #view-fotos-view-display-id-page .views-field-field-fotos-fotos {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  #view-fotos-view-display-id-page .views-field-title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 32px;
+  }
+  #view-fotos-view-display-id-page .views-field-view-node {
+    margin: 10px 0 0 0;
+  }
+  .node-fotos .field-name-field-fotos-descricao {
+    padding: 0 0 10px;
+    border-bottom: 1px solid #f6f6f6;
+    margin: 0 0 30px 0;
+  }
+  .node-fotos .field-name-field-fotos-fotos:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .node-fotos .field-name-field-fotos-fotos .field-item {
+    float: left;
+    margin: 0 18px 18px 0;
+  }
+ 
+/**
+ * Footer
+ */
+ 
+ .footer-page {
+   padding: 20px;
+   margin: 20px 0 0 0;
+   font-size: 12px;
+   background: #D6E1E9;
+ }
+ .footer-page p {
+   margin-bottom: 0;
+ }
+
+
+
+
+/**
+ * Modo de manutenção
+ */
+ 
+.container-maintenance {
+  width: 920px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.maintenance-page header {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.maintenance-page h3 {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+
+#block-simple-tweaks-telefone {
+  position: absolute;
+  top:20px;
+  right: 20px;
+  font-size: 18px;
+  color: #7892A5;
+}
+
